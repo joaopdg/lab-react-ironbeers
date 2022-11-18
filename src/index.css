@@ -5,25 +5,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+}
+
+.appBody {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* ----------------------------------------------- */
 
 nav img {
-  width: 30vw;
+  width: 25vw;
+  height: 70px;
 }
 
 /* ----------------------------------------------- */
 
-.card {
+.cardLink {
   text-decoration: none;
+}
+
+.card {
   border: 1px solid lightgray;
-  width: 30vw;
+  width: 25vw;
   flex-wrap: wrap;
 }
 
 .card img {
-  width: 30vw;
+  width: 25vw;
 }
 
 .card h1 {
@@ -38,7 +50,7 @@ nav img {
 
 .beerCard {
   border: 1px solid lightgray;
-  width: 30vw;
+  width: 25vw;
   display: flex;
 }
 
@@ -47,12 +59,32 @@ nav img {
   margin-right: 50px;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
 }
 
-.link, .link h1, .link h2, link p {
+.link,
+.link h1,
+.link h2,
+.link p {
   text-decoration: none;
   color: black;
+}
+
+.beersOverflow {
+  height: calc(100vh - 90px);
+  width: 25vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.textMargin {
+  margin: 5px 0px 5px 0px;
+}
+
+.beerText h1,
+.beerText h2,
+.beerText p{
+  font-size: 16px;
 }
